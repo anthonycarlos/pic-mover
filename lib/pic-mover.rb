@@ -15,7 +15,7 @@ class Server
   end
 
   def local_pics
-    path = @conf['local_root']
+    path = @conf['local_pic_dir']
     pics = Dir.glob("#{path}/*.jpg")
     short_pics = pics.map{|pic| File.basename(pic) }
   end
@@ -50,12 +50,12 @@ class Server
               @conf['hostname'],
               @conf['username'],
               @conf['password'],
-              File.join(@conf['local_root'], pic),
+              File.join(@conf['local_pic_dir'], pic),
               File.join(@conf['remote_root'], pic))
             @log.info "Copied local #{pic} to remote."
           else
             @log.info "Found local #{pic} already at remote."
-            FileUtils.rm File.join(@conf['local_root'], pic)
+            FileUtils.rm File.join(@conf['local_pic_dir'], pic)
             @log.info "Deleted local #{pic}."
           end
         end
