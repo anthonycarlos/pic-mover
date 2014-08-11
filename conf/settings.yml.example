@@ -1,0 +1,12 @@
+hostname: <remote host>
+username: <remote username>
+password: <remote password>
+remote_root: <remote path>
+remote_glob: '*.jpg'
+
+local_root: <local path where pics are saved>
+local_log_file: pic-mover.log
+# Logging levels: DEBUG, INFO, WARN, ERROR, FATAL, UNKNOWN
+local_log_level: INFO
+
+scan_interval: 5

@@ -1,0 +1,3 @@
+#!/bin/bash
+
+ruby ../lib/pic-mover_control.rb $1
