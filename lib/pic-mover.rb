@@ -15,7 +15,7 @@ class Server
   end
 
   def local_pics
-    path = @conf['local_root']
+    path = @conf['local_pic_dir']
     pics = Dir.glob("#{path}/*.jpg")
     short_pics = pics.map{|pic| File.basename(pic) }
   end
