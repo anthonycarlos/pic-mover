@@ -4,8 +4,9 @@ password: <remote password>
 remote_root: <remote path>
 remote_glob: '*.jpg'
 
-local_root: <local path where pics are saved>
+local_root: <local path where pic-mover is stored>
 local_log_file: pic-mover.log
+local_pic_dir: <local path where pics are saved>
 # Logging levels: DEBUG, INFO, WARN, ERROR, FATAL, UNKNOWN
 local_log_level: INFO
 
