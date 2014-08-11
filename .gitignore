@@ -1,6 +1,7 @@
 .DS_Store
 /log/*.log
 settings.yml
+*.pid
 *.gem
 *.rbc
 /.config
